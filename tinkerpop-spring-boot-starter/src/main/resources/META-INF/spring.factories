@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.github.robertdale.spring.boot.tinkerpop.GremlinAnnotationDrivenConfiguration,\
+com.github.robertdale.spring.boot.tinkerpop.TinkerGremlinAnnotationDrivenConfiguration,\
+com.github.robertdale.spring.boot.tinkerpop.RemoteGremlinAnnotationDrivenConfiguration
