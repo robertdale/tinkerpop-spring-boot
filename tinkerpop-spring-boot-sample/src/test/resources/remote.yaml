@@ -30,3 +30,27 @@
 hosts: [localhost]
 port: 8188
 serializer: { className: org.apache.tinkerpop.gremlin.driver.ser.GryoMessageSerializerV1d0 }
+connectionPool: { 
+# The maximum number of in-flight requests that can occur on a connection.
+maxInProcessPerConnection: 4,
+# The maximum number of times that a connection can be borrowed from the pool simultaneously.
+maxSimultaneousUsagePerConnection: 16,
+# The maximum size of a connection pool for a host.
+maxSize: 8,
+# The amount of time in milliseconds to wait for a new connection before timing out.
+maxWaitForConnection: 3000,
+# The amount of time in milliseconds to wait for a session to close before timing out (does not apply to sessionless connections).
+maxWaitForSessionClose: 3000,
+# The minimum number of in-flight requests that can occur on a connection.
+minInProcessPerConnection: 1,
+# The maximum number of times that a connection can be borrowed from the pool simultaneously.
+minSimultaneousUsagePerConnection: 8,
+# The minimum size of a connection pool for a host.
+minSize: 2,
+# The amount of time in milliseconds to wait before trying to reconnect to a dead host for the first time.
+reconnectInitialDelay: 1000,
+# The amount of time in milliseconds to wait before trying to reconnect to a dead host. This interval occurs after the time specified by the reconnectInitialDelay.
+reconnectInterval: 1000,
+# The override value for the size of the result batches to be returned from the server.
+resultIterationBatchSize: 64
+}
