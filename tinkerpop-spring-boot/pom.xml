@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>com.github.robertdale</groupId>
 		<artifactId>tinkerpop-spring-boot-parent</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>0.0.2-SNAPSHOT</version>
 	</parent>
 
 	<artifactId>tinkerpop-spring-boot</artifactId>
@@ -35,13 +35,5 @@
 			<optional>true</optional>
 		</dependency>
 	</dependencies>
-
-	<!-- gremlin-users: for whatever reason, jbCrypt isn't deployed to maven central -->
-	<repositories>
-		<repository>
-			<id>jitpack.io</id>
-			<url>https://jitpack.io</url>
-		</repository>
-	</repositories>
 
 </project>

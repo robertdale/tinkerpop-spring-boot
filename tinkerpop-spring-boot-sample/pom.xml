@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>com.github.robertdale</groupId>
 		<artifactId>tinkerpop-spring-boot-parent</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>0.0.2-SNAPSHOT</version>
 	</parent>
 
 	<artifactId>tinkerpop-spring-boot-sample</artifactId>
@@ -21,6 +21,12 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+				<!-- embedded gremlin server for testing -->
+		<dependency>
+			<groupId>org.apache.tinkerpop</groupId>
+			<artifactId>gremlin-server</artifactId>
+		</dependency>
+		
 	</dependencies>
 
 </project>
